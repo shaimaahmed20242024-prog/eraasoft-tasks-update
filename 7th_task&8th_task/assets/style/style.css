@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Barlow;
+    outline: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1240px;
+    /* background-color: #FFFFFC; */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+    font-family: Barlow;
+    margin-bottom: 12px;
+    height: 60px;
+}
+
+.navbar .container nav {
+    display: flex;
+
+}
+
+.navbar .container .headline {
+    display: flex;
+}
+
+.navbar .container h3 {
+    font: size 18px;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+    padding: 5px;
+}
+
+nav ul li a {
+    font-family: Barlow;
+    font: size 16px;
+    font-weight: 400;
+
+}
+
+*/ .nav_buttons {
+    display: flex;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav_buttons .register {
+    background-color: #FFFFFC;
+    border: 1px solid #1576D6;
+    color: #1576D6;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.nav_buttons .sign_in {
+    background-color: #1576D6;
+    border: 1px solid #1576D6;
+    color: #FFFFFC;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../images/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #1576D6;
+    color: #FFFFFC;
+    height: calc(100svh - 60px);
+
+}
+
+
+.hero_content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero_content p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////  */
+.grid_container_navbar {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    width: 85%;
+    /* margin: 190px; */
+    box-shadow: 0px 4px 37px 0px #00000026;
+    background-color: #FFFFFC;
+    border-radius: 4px;
+    padding: 12px 0;
+    color: #25292C;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    left: 7%;
+    transform: translatey(-30px);
+    /* في الشاشات الكبيره */
+    gap: 12px;
+    padding: 12px;
+    /* cursor: pointer;
+    transition: background 0.3s; */
+    /* grid-template-areas: "where_are_you_going check_in check_out guest search";
+  ; */
+}
+
+.form_details.container {
+    filter: drop-shadow(0px 4px 37px 0px #00000026);
+}
+
+.where_are_you_going>input,
+.check_in>input,
+.check_out>input,
+.guest>input {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 31px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+
+.where_are_you_going>svg,
+.check_in>svg,
+.check_out>svg,
+.guest>svg {
+    position: absolute;
+    transform: translateX(11px);
+    top: 11px;
+}
+
+
+.search {
+    /* grid-area: search; */
+    background-color: #1576D6;
+    color: #FFFFFC;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 11px;
+}
+
+.where_are_you_going,
+.check_in,
+.check_out,
+.guest {
+    padding: 0px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    color: #25292C;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.waring_content {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    background-color: #F4C123;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.waring_content p span {
+    color: #1576D6;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 75px;
+    font-family: Barlow;
+
+    /* grid-template-areas: "flexability experience quality winning_support"; */
+}
+
+.grid_container h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.grid_container p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #25292C;
+}
+
+.flexability,
+.experience,
+.quality,
+.winning_support {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.why h2 {
+    margin-bottom: 20px;
+}
+
+.why {
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+.grid_container_country {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    /* width: 100%; */
+    /* grid-template-areas: "australia Japan newzland greece"; */
+}
+
+.enjoy.container>h2 {
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.enjoy.container>p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.grid_container_country h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+.grid_container_country span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.grid_container_country img {
+    width: 100%;
+    aspect-ratio: calc(295 / 220);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.inspiration.container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.inspiration h2 {
+    color: #25292C;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.grid_inspiration {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    color: #FFFFFC;
+}
+
+.grid_inspiration .inspiration1 {
+    background-image: url(../images/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid_inspiration .inspiration2 {
+    background-image: url(../images/united_kingdom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid_inspiration .inspiration3 {
+    background-image: url(../images/mountains.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid_inspiration h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.grid_container p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.grid_inspiration .inspiration1,
+.grid_inspiration .inspiration2,
+.grid_inspiration .inspiration3 {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    text-align: left;
+    gap: 10px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    justify-content: end;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.hotels.container {
+    margin-bottom: 60px;
+
+}
+
+.grid_hotels {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid_hotels img {
+    width: 100%;
+    aspect-ratio: calc( 358 / 300);
+}
+
+.hotels.container>h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hotels.container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+.hotels.container span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* .grid_things_to_do {
+    display: grid;
+    grid-template-areas: "cruises     beach_tour      city_tour"
+        "museum_tour beach_tour  food hiking";
+} */
+.grid_things_to_do {
+    display: grid;
+    grid-template-columns: .75fr 1fr .4fr .6fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+    min-height: 300px;
+
+}
+
+.cruises,
+.museum_tour,
+.beach_tour,
+.city_tour,
+.food,
+.hiking {
+    border-radius: 12px;
+    color: #FFFFFC;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 12px;
+    align-content: end;
+}
+
+.cruises {
+    grid-area: cruises;
+    background-image: url(../images/cruises.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1 /2;
+    grid-column: 1 / 2;
+
+}
+
+.museum_tour {
+    grid-area: museum_tour;
+    background-image: url(../images/museum.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+}
+
+.beach_tour {
+    grid-area: beach_tour;
+    background-image: url(../images/beach_tour.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+
+}
+
+.city_tour {
+    grid-area: city_tour;
+    background-image: url(../images/city.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+
+}
+
+.food {
+    grid-area: food;
+    background-image: url(../images/food.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+
+}
+
+.hiking {
+    grid-area: hiking;
+    background-image: url(../images/hiking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+
+}
+
+.things_to_do.container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width:1024px) {
+
+    .grid_container_navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width:880px) {
+
+    .nav_buttons {
+        display: none;
+    }
+
+    /* ////////////////////////////////////////// */
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .why.container {
+        text-align: center;
+    }
+
+    .flexability,
+    .experience,
+    .quality,
+    .winning_support {
+       align-items: center;
+    }
+
+    /* /////////////////////////////////////////////////// */
+    .grid_container_country {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    /*//////////////////////////////////////////////*/
+    .grid_inspiration {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+/* //////////////////////////////////////////// */
+    .grid_hotels {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+/* ///////////////////////////////////////// */
+    .grid_things_to_do {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .cruises {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .museum_tour {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    .beach_tour {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .city_tour {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .food {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .hiking {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+
+    .cruises,
+    .museum_tour,
+    .beach_tour,
+    .city_tour,
+    .food,
+    .hiking {
+        height: 300px;
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:768px) {
+    .navbar .container {
+        position: absolute;
+        /* فوق الهيرو */
+        background: transparent;
+        /* بدون خلفية */
+        color: white;
+        /* left:100px; */
+        z-index: 2;
+        width: 100%;
+    }
+
+    .hero_content {
+        height: 100svh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: flex-start;
+        text-align: left;
+        padding: 45px 16px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .nav_buttons {
+        display: none;
+    }
+
+    nav>svg {
+        display: block;
+    }
+/* ////////////////////////////////////////// */
+    .grid_container_navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        position: static;
+        margin-top: 24px;
+    }
+
+    .grid_container_navbar .search {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+/* //////////////////////////////////////// */
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ///////////////////////////////////// */
+
+    .grid_container_country {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        /* grid-template-columns: repeat(auto-fit, minmax(768px, 1fr)); */
+    }
+/* /////////////////////////////////////////// */
+    .grid_inspiration {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+/* /////////////////////////////////////////// */
+    .grid_hotels {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    /* ////////////////////////////////////// */
+    .grid_things_to_do {
+        display: grid;
+        grid-template-areas:
+    "cruises food"
+    "city_tour city_tour"
+    "beach_tour beach_tour"
+    "hiking museum_tour";
+    }
+    .cruises {
+        grid-area:cruises ;
+       
+    }
+    .museum_tour {
+        grid-area:museum_tour ;
+    }
+
+    .beach_tour {
+        grid-area:cruises ;
+    }
+
+    .city_tour {
+        grid-area:city_tour ;
+    }
+
+    .food {
+        grid-area:food ; 
+    }
+
+    .hiking {
+       grid-area:hiking ;  
+    }
+      .cruises,
+    .museum_tour,
+    .beach_tour,
+    .city_tour,
+    .food,
+    .hiking {
+        height: 300px;
+    }
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */

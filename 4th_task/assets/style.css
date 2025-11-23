@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+.container
+{
+    max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+h1{
+    font-family: cairo;
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+    /* width:272 px; */
+    height: 90 px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.products {
+    /* padding: 10px; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    
+    /* justify-content: center; */
+}
+
+.product_card {
+    width: calc((100% - 36px) / 4);
+    background-color: #FFFFFF;
+    border: 1px solid #32323232;
+    border-radius: 6px;
+    padding: 10px 10px;
+    
+}
+.iphone
+{
+    width: 276px;
+    height: 108px;
+    line-height: 30px;
+}
+.iphone>span {
+    font-family: glory;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.iphone>p {
+    color: #32323296;
+    font-weight: bold;
+    font-family: glory;
+    font: size 20px;
+}
+
+h3{
+    color: #323232;
+    font-weight: bold;
+    font-family: glory;
+    font-size: 22px;
+}
+.aftersale {
+    color: #28A745;
+    font-weight: bold;
+    font-family: glory;
+}
+
+ .beforesale {
+    color: #DC3545;
+    font-weight: bold;
+    font-family: glory;
+    text-decoration: line-through;
+}
+
+.buttons {
+    display: flex;
+    gap: 6px;
+    height: 50px;
+    width: 276px;
+}
+
+.add_to_cart_button {
+    background-color: #007BFF;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    /* width: 220px; */
+    
+}
+
+.fav_button {
+    width: 50 px;
+    height: 50 px;
+    border: 2px solid #007BFF;
+    background-color: #FFFFFF;
+}
+
+.add_to_cart_button{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: glory;
+    text-decoration: none;
+}
+.product_card img
+{
+aspect-ratio: 276/184;
+}
+

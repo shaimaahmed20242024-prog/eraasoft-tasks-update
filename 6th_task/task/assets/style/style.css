@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Arima", sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 7vh;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #12121232;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #fbfbfb;
+
+}
+
+header>span {
+    color: #121212;
+}
+
+header>nav ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+header>nav li a
+{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+section {
+    /* height: calc(100% - 7vh); */
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    /* height: 93vh; ممكن اديله */
+    /* height: 100%; */
+    width: 240px;
+    background-color: #121212;
+    color: #fbfbfb;
+    padding: 12px;
+    
+}
+.sticky_sidebar
+{
+    position: sticky;
+    top: 68px;
+}
+
+aside .side_links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.side_links a {
+    color: #fbfbfb;
+    font-size: 16px;
+}
+
+main {
+    width: calc(100% - 240px);  /*240px دول بتوع ال */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pictures {
+    padding: 12px;
+    /* height: 87vh; */
+    /* max-width: 100%; */
+    flex: 1;
+}
+
+h1 {
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+.card_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* max-width: 100%; */
+    /* height: calc((100% - 48px - 52.4px) / 3); */
+}
+
+.card {
+    border: 1px solid #12121232;
+    width: calc((100% - 36px) / 4);
+}
+
+
+.card img {
+    max-width: 100%;
+    /* object-fit: cover; */
+}
+
+footer {
+    /* height: 6vh; */
+    height: 50px;
+    background-color: #fbfbfb;
+    color: #121212;
+    padding: 12px;
+    border-top: 1px solid #12121232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    /* position: sticky;
+    top: calc(100% - 45px); */
+}
+
+footer a {
+    color: #551a8b;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:1478px) {
+    .card {
+        width: calc((100% - 24px) / 3);
+    }
+}
+
+@media screen and (max-width:1185px) {
+    .card {
+        width: calc((100% - 12px) / 2);
+    }
+
+}
+
+@media screen and (max-width:874px) {
+    .card {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:792px) {
+    main {
+        width: 100%;
+    }
+
+    .card {
+        width: calc((100% - 12px) / 2);
+    }
+
+    aside {
+
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:635px) {
+    main {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%
+    }
+
+    aside {
+        display: none;
+
+    }
+    
+}

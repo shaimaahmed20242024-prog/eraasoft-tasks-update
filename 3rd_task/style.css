@@ -1,0 +1,53 @@
+body
+{
+    background-color: #fafafa;
+    color: 202020;
+    padding:10px;
+}
+*
+{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     border:none;
+}
+p
+{
+    padding:10 px;
+    margin:5px ;
+}
+ section 
+
+{
+    border-radius: 2px;
+    border-color:#e2e2e2;
+    border-style:solid;
+    width:280px;
+    border-radius:10px;
+    margin:15px;
+    padding: 10px;
+}  
+.quote_box
+{
+    background-color: #8E2DE224;
+    border:2px;
+    border-style:solid;
+    border-color: 8E2DE224;
+     
+}
+
+.page_title
+{font-size: 28px; margin-left: 15px;}
+.name
+{font-size: 20px;}
+.role
+{font-size: 16px; color: #8E2DE2; }
+.quote_text
+{font-size: 16px; }
+.contact_item
+{font-size: 18px; color:#8E2DE2; margin-top:5px; }
+.contact_details
+{font-size:14px;}
+
+
+
